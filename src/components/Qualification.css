@@ -1,0 +1,137 @@
+.qualification {
+    padding: 4rem 2rem;
+    background-color: #1A1523;
+    color: #fff;
+    text-align: center;
+}
+
+.qualification__title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.qualification__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #5A4FCF;
+}
+
+.qualification__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.qualification__button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.qualification__button:hover, .qualification__active {
+    background-color: #5A4FCF;
+    color: #fff;
+}
+
+.qualification__icon {
+    margin-right: 0.5rem;
+}
+
+.qualification__sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.qualification__content {
+    display: none;
+    width: 100%;
+}
+
+.qualification__content-active {
+    display: block;
+}
+
+.qualification__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.qualification__data:nth-child(even) .qualification__info {
+    order: 1;
+}
+
+.qualification__data:nth-child(even) .qualification__timeline {
+    order: 2;
+}
+
+.qualification__data:nth-child(odd) .qualification__info {
+    order: 2;
+}
+
+.qualification__data:nth-child(odd) .qualification__timeline {
+    order: 1;
+}
+
+.qualification__info {
+    text-align: left;
+    padding: 0 1rem;
+    width: 45%;
+}
+
+.qualification__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.qualification__subtitle {
+    font-size: 1rem;
+    color: #a1a1a1;
+}
+
+.qualification__calendar {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #a1a1a1;
+}
+
+.qualification__calendar svg {
+    margin-right: 0.5rem;
+}
+
+.qualification__timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-width: 20px;
+    width: 10%;
+}
+
+.qualification__rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #5A4FCF;
+    background-color: #1A1523;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.qualification__line {
+    width: 2px;
+    height: 100%;
+    background-color: #5A4FCF;
+    position: absolute;
+    top: 13px;
+    z-index: 0;
+}
